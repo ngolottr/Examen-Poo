@@ -28,7 +28,7 @@ public abstract class PersonalDeCabina {
     public PersonalDeCabina(String nombre, String apellido, String nacionalidad, int edad) {
         this.nombre = nombre = "su nombre";
         this.apellido = apellido = "su apellido";
-        this.nacionalidad = nacionalidad;
+        this.nacionalidad = nacionalidad = "nacionalidad";
         this.edad = edad  = 21;
     }
     
@@ -60,7 +60,7 @@ public abstract class PersonalDeCabina {
     }
 /**
  * 
- * @param apellido 
+ * @param apellido éste parámetro modifica el apellido de un perosnal de cabina.
  */
     public void setApellido(String apellido) {
         this.apellido = apellido;
@@ -69,7 +69,10 @@ public abstract class PersonalDeCabina {
     public String getNacionalidad() {
         return nacionalidad;
     }
-
+/**
+ * 
+ * @param nacionalidad éste parámetro modifica la nacionalidad de un personal de cabina.
+ */
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }
@@ -77,7 +80,10 @@ public abstract class PersonalDeCabina {
     public int getEdad() {
         return edad;
     }
-
+/**
+ * 
+ * @param edad éste parámetro modifica la edad de un personal de cabina (debe ser mayor a 21).
+ */
     public void setEdad(int edad) {
         this.edad = edad;
     }
@@ -120,6 +126,15 @@ public abstract class PersonalDeCabina {
             return false;
         }
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return "PersonalDeCabina:" + "rut=" + rut + 
+                ", nombre=" + nombre + 
+                ", apellido=" + apellido + 
+                ", nacionalidad=" + nacionalidad + 
+                ", edad=" + edad;
     }
 
     

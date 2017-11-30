@@ -31,7 +31,10 @@ double valor;
     public int getNum_vuelo() {
         return num_vuelo;
     }
-
+/**
+ * 
+ * @param num_vuelo éste parámetro modifica el número de vuelo del pasaje del cliente.
+ */
     public void setNum_vuelo(int num_vuelo) {
         this.num_vuelo = num_vuelo;
     }
@@ -39,7 +42,10 @@ double valor;
     public String getFecha_hora() {
         return fecha_hora;
     }
-
+/**
+ * 
+ * @param fecha_hora éste parámetro modifica la fecha y la hora del pasaje del cliente.
+ */
     public void setFecha_hora(String fecha_hora) {
         this.fecha_hora = fecha_hora;
     }
@@ -47,7 +53,10 @@ double valor;
     public String getDestino() {
         return destino;
     }
-
+/**
+ * 
+ * @param destino éste parámetro modifica el destino del pasaje del cliente.
+ */
     public void setDestino(String destino) {
         this.destino = destino;
     }
@@ -55,7 +64,10 @@ double valor;
     public String getClase() {
         return clase;
     }
-
+/**
+ * 
+ * @param clase éste parámetro modifica la clase del pasaje del cliente (puede ser económica o ejecutiva).
+ */
     public void setClase(String clase) {
         this.clase = clase;
     }
@@ -63,15 +75,14 @@ double valor;
     public double getValor() {
         return valor;
     }
-
+/**
+ * 
+ * @param valor éste parámetro modifica el valor del pasaje del cliente.
+ */
     public void setValor(double valor) {
         this.valor = valor;
     }
 
-    @Override
-    public String toString() {
-        return "Pasaje{" + "num_vuelo=" + num_vuelo + ", fecha_hora=" + fecha_hora + ", destino=" + destino + ", clase=" + clase + ", valor=" + valor + '}';
-    }
 
     @Override
     public int hashCode() {
@@ -83,7 +94,11 @@ double valor;
         hash = 73 * hash + (int) (Double.doubleToLongBits(this.valor) ^ (Double.doubleToLongBits(this.valor) >>> 32));
         return hash;
     }
-
+/**
+ * .
+ * @param obj este parametro instancia un objeto de tipo Objet.
+ * @return retorna verdadero si es igua al objeto y falso si es nulo o vacío
+ */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -112,6 +127,17 @@ double valor;
             return false;
         }
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Pasaje:" + "num_vuelo=" + num_vuelo + 
+                ", fecha_hora=" + fecha_hora + 
+                ", destino=" + destino + 
+                ", clase=" + clase + 
+                ", valor=" + valor + 
+                ", rut_cliente=" + super.getRut() +
+                ", nombre_cliente" + super.getNombre();
     }
 
     

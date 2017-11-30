@@ -71,4 +71,13 @@ public class Azafate extends PersonalDeCabina {
         return true;
     }
 
+    @Override
+    public String toString() {
+        return "Azafate{" + "idioma=" + idioma +
+                ", rut=" + super.getRut() +
+                ", nombre=" + super.getNombre() +
+                ", apellido=" + super.getApellido() +
+                ", edad=" + super.getEdad();
+    }
+
 }
