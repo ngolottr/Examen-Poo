@@ -26,10 +26,10 @@ public abstract class PersonalDeCabina {
  * @param edad éste parámetro indica una edad para el personal de la cabina (debe ser mayor a 21).
  */
     public PersonalDeCabina(String nombre, String apellido, String nacionalidad, int edad) {
-        this.nombre = nombre = "su nombre";
-        this.apellido = apellido = "su apellido";
-        this.nacionalidad = nacionalidad = "nacionalidad";
-        this.edad = edad  = 21;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.nacionalidad = nacionalidad;
+        this.edad = edad;
     }
     
 

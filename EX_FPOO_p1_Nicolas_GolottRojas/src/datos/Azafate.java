@@ -77,7 +77,7 @@ public class Azafate extends PersonalDeCabina {
                 ", rut=" + super.getRut() +
                 ", nombre=" + super.getNombre() +
                 ", apellido=" + super.getApellido() +
-                ", edad=" + super.getEdad();
+                ", edad=" + super.getEdad() + "}";
     }
 
 }
